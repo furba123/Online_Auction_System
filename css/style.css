@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500;600&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+
+}
+
+body {
+   position: relative;
+   min-height: 100vh;
+   padding-bottom: 72px;
+   font-family: 'Tektur', cursive;
+}
+
+.navigation {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: absolute;
+   width: 100%;
+}
+
+.logo img {
+   max-width: 250px;
+}
+
+.logo {
+   padding: 15px;
+}
+
+.navbar ul li {
+   display: relative;
+   display: inline;
+
+}
+
+.navbar ul li a {
+   color: beige;
+   font-size: 22px;
+   padding: 8px 20px !important;
+   text-decoration: none;
+}
+
+ul li a:hover {
+   background-color: beige;
+   color: black !important;
+   border-radius: 4px;
+}
+
+.main-bg {
+   background-image: url(../img/online-auction.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.breadcrumbs {
+   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)), url(../img/bread.jpg);
+   height: 200px;
+   display: flex;
+   align-items: flex-end;
+   padding: 20px;
+
+
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.breadcrumbs i {
+   margin: 0 10px;
+}
+
+.title h2 {
+   text-align: center;
+   padding: 15px;
+   margin-top: 30px;
+}
+
+#countdown-timer {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   z-index: 2;
+}
+
+.card img{
+   height: 260px;
+   object-fit: cover;
+   width: 100%;
+}
+
+.product-info .desc{
+   text-align: justify;
+}
+
+.winner-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    margin-top: 20px;
+}
+.togglePassword{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.winner-wrap img{
+   height: 100px;
+   margin-right: 15px;
+}
+
+.winner-wrap h4 {
+   font-style: italic;   
+}
+.winner-wrap h4 span{
+   color: darkgoldenrod;
+}
+
+.detail-page .product-image img{
+    max-height: 459px;
+    object-fit: contain;
+    }
+.search-wrapper{
+   position:relative
+}
+
+.search-wrapper input{
+   border: 1px solid grey;
+}
+
+.search-wrapper .icon{
+   position:absolute;
+   right: 10px;
+   top: 6px;
+   z-index: 5;
+}
+    
+@media (max-width: 768px){
+   .logo{
+      padding: 0 15px;
+   }
+   .logo img{
+      filter: invert(1);
+      max-width: 180px;
+   }
+   .navigation{
+      background-color: #333;
+   }
+}

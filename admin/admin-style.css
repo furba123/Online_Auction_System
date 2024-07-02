@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 72px;
+    font-family: 'Tektur', cursive;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.dashboard .card {
+    position: relative;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 1px 1px 1px black;
+}
+
+.dashboard .card .icon {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 4em;
+    opacity: 0.2;
+    color: white;
+}
+
+.togglePassword{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+table {
+    vertical-align: middle !important;
+}
+
+table th{
+    white-space: nowrap;
+}
+
+table img{
+    height: 100px !important;
+    object-fit: contain;
+}
+.search-wrapper{
+   position:relative
+}
+
+.search-wrapper input{
+   border: 1px solid grey;
+}
+
+.search-wrapper .icon{
+   position:absolute;
+   right: 10px;
+   top: 6px;
+   z-index: 5;
+}
+ .qr-code{
+        display: none;
+    }
+#qr_scan:checked + .form-check-label + .qr-code {
+        display: block;
+    }
+
+   
+.payment-modal *:not(.btn){
+       text-align: left;
+    }
+
+    .payment-modal input.disabled{
+       background: none;
+       border: none;
+       padding:0;
+       margin: 10px 0;
+       pointer-events: none;
+       cursor: default;
+    }
+
+     .payment-modal .label{
+      margin: 10px 0;
+    }
